@@ -6,5 +6,4 @@ return [
     'pagination' => 3,
     'smtp_login' => '',
     'smtp_password' => '',
-
 ];

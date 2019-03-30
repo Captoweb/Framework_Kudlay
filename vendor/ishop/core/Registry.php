@@ -2,18 +2,17 @@
 
 namespace ishop;
 
-
-class Registry{
+class Registry {
 
     use TSingletone;
 
-    public static $properties = [];
+    protected static $properties = [];
 
     public function setProperty($name, $value){
-         self::$properties[$name] = $value;
+        self::$properties[$name] = $value;
     }
 
-    public function getProperty($name) {
+    public function getProperty($name){
         if(isset(self::$properties[$name])){
             return self::$properties[$name];
         }

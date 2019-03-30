@@ -10,11 +10,11 @@ define("CACHE", ROOT . '/tmp/cache');
 define("CONF", ROOT . '/config');
 define("LAYOUT", 'default');
 
-//http://ishop2.loc/public/index.php
+// http://ishop2.loc/public/index.php
 $app_path = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";
-//http://ishop2.loc/public/
+// http://ishop2.loc/public/
 $app_path = preg_replace("#[^/]+$#", '', $app_path);
-//http://ishop2.loc
+// http://ishop2.loc
 $app_path = str_replace('/public/', '', $app_path);
 define("PATH", $app_path);
 define("ADMIN", PATH . '/admin');
